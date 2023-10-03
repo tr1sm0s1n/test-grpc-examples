@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package greeter;
+
+// The greeting service definition.
+service Greeter {
+  rpc Send (Request) returns (Response) {}
+}
+
+// The request message containing the user's name.
+message Request {
+  string name = 1;
+}
+
+// The response message containing the greetings.
+message Response {
+  string message = 1;
+}

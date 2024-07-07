@@ -2,6 +2,7 @@
 GODIR = cd go/
 JSDIR = cd javascript/
 TSDIR = cd typescript/
+PYDIR = cd python/
 
 .PHONY: go-client
 #? go-client: Run Go client.
@@ -32,6 +33,16 @@ ts-client:
 #? ts-server: Run TypeScript server.
 ts-server:
 	@$(TSDIR) && npm run server
+
+.PHONY: py-client
+#? py-client: Run Python client.
+py-client:
+	@$(PYDIR) && python client.py
+
+.PHONY: py-server
+#? py-server: Run Python server.
+py-server:
+	@$(PYDIR) && python server.py
 
 #? help: Get more info on make commands.
 help: Makefile

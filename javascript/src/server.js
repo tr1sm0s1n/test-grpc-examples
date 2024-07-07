@@ -19,7 +19,6 @@ function sendMessage(call, callback) {
   const server = new Server();
   server.addService(greeter_proto.Greeter.service, { Send: sendMessage });
   server.bindAsync('0.0.0.0:50051', ServerCredentials.createInsecure(), () => {
-    server.start();
     console.log('Server listening on port 50051...');
   })
 })();

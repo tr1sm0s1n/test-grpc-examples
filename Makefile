@@ -37,12 +37,12 @@ ts-server:
 .PHONY: py-client
 #? py-client: Run Python client.
 py-client:
-	@$(PYDIR) && python client.py
+	@$(PYDIR) && uv run client.py
 
 .PHONY: py-server
 #? py-server: Run Python server.
 py-server:
-	@$(PYDIR) && python server.py
+	@$(PYDIR) && uv run server.py
 
 #? help: Get more info on make commands.
 help: Makefile

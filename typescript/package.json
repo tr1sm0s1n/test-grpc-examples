@@ -12,13 +12,13 @@
   "author": "Mobin Mohanan",
   "license": "MIT",
   "dependencies": {
-    "@grpc/grpc-js": "^1.13.2",
-    "@grpc/proto-loader": "^0.7.13",
+    "@grpc/grpc-js": "^1.14.0",
+    "@grpc/proto-loader": "^0.8.0",
     "minimist": "^1.2.8"
   },
   "devDependencies": {
     "@types/minimist": "^1.2.5",
-    "tsx": "^3.14.0",
-    "typescript": "^5.8.3"
+    "tsx": "^4.20.6",
+    "typescript": "^5.9.3"
   }
 }

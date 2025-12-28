@@ -12,7 +12,7 @@
   "author": "Mobin Mohanan",
   "license": "MIT",
   "dependencies": {
-    "@grpc/grpc-js": "^1.14.0",
+    "@grpc/grpc-js": "^1.14.3",
     "@grpc/proto-loader": "^0.8.0",
     "minimist": "^1.2.8"
   }

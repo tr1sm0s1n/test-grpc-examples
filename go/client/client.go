@@ -6,9 +6,9 @@ import (
 	"log"
 	"time"
 
+	pb "github.com/tr1sm0s1n/test-grpc-examples/go/proto"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials/insecure"
-	pb "github.com/tr1sm0s1n/test-grpc-examples/go/proto"
 )
 
 const (
@@ -33,9 +33,11 @@ func main() {
 	// Contact the server and print out its response.
 	ctx, cancel := context.WithTimeout(context.Background(), time.Second)
 	defer cancel()
+	
 	r, err := c.Send(ctx, &pb.Request{Name: *name})
 	if err != nil {
 		log.Fatalf("could not greet: %v", err)
 	}
+
 	log.Printf("Greeting: %s", r.GetMessage())
 }

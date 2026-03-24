@@ -3,7 +3,7 @@ module github.com/tr1sm0s1n/test-grpc-examples/go
 go 1.25.0
 
 require (
-	google.golang.org/grpc v1.78.0
+	google.golang.org/grpc v1.79.3
 	google.golang.org/protobuf v1.36.11
 )
 
